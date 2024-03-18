@@ -8,8 +8,12 @@ import { Button, Select } from 'element-ui'
 Vue.use(Button)
 Vue.use(Select)
 
+// 引入路由
+import router from '@/router'
+
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
