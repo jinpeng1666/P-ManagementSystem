@@ -1,5 +1,5 @@
 <template>
-  <el-menu default-active="1" class="el-menu-vertical-demo">
+  <el-menu default-active="1" class="el-menu-vertical-demo" router>
     <el-menu-item v-for="item in asideItem" :key="item.index" :index="item.index">
       <i :class="`el-icon-${item.icon}`"></i>
       <span slot="title">{{ item.content }}</span>
@@ -14,32 +14,32 @@ export default {
     return {
       asideItem: [
         {
-          index: 1,
+          index: "/home",
           icon: "s-home",
           content: "首页"
         },
         {
-          index: 2,
+          index: "/department",
           icon: "s-grid",
           content: "部门"
         },
         {
-          index: 3,
+          index: "/employee",
           icon: "user-solid",
           content: "成员"
         },
         {
-          index: 4,
+          index: "/salary",
           icon: "money-rmb-symbol",
           content: "薪资"
         },
         {
-          index: 5,
+          index: "/relationship",
           icon: "share",
           content: "关系"
         },
         {
-          index: 6,
+          index: "/message",
           icon: "chat-square",
           content: "消息"
         }

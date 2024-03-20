@@ -12,6 +12,7 @@
       <el-container>
         <el-header>Header</el-header>
         <el-main>
+          <common-main />
         </el-main>
       </el-container>
     </el-container>
@@ -23,11 +24,15 @@
 import logo from "@/components/logo"
 // 引入CommonAside组件
 import CommonAside from "@/components/CommonAside"
+// 引入CommonMain组件
+import CommonMain from "@/components/CommonMain"
+
 export default {
   name: 'App',
   components: {
     logo,
-    CommonAside
+    CommonAside,
+    CommonMain
   }
 }
 </script>
