@@ -14,6 +14,10 @@ Vue.use(VueRouter)
 // 配置路由
 const routes = [
     {
+        path: '/',
+        redirect: '/home'
+    },
+    {
         path: '/home',
         component: Home
     },
